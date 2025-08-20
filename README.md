@@ -1,6 +1,6 @@
 # GRC Portfolio Hub
 
-  [![Test Suite](https://github.com/your-username/grc_portfolio/actions/workflows/test.yml/badge.svg)](https://github.com/your-username/grc_portfolio/actions/workflows/test.yml)
+[![Test Suite](https://github.com/your-username/grc_portfolio/actions/workflows/test.yml/badge.svg)](https://github.com/your-username/grc_portfolio/actions/workflows/test.yml)
 
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Active-brightgreen" alt="Status: Active">
