@@ -54,20 +54,16 @@ I’m passionate about bridging the gap between technical controls and business 
 ## Labs & Projects
 
 ### Completed
-1. **AWS Account Governance and Security Foundations**  
-   - Implemented IAM Identity Center (SSO), MFA enforcement, AWS Config rules, and centralized monitoring via Security Hub.  
-   - Mapped controls to NIST CSF and CIS benchmarks.  
-   - Outcome: Established a baseline governance model with audit-ready evidence.  
+- [AWS Account Governance & Security Foundations](projects/aws-account-governance.md)  
+  Established IAM Identity Center (SSO), MFA, AWS Config rules, and Security Hub with CIS/NIST mapping.  
 
-2. **Enterprise Risk Assessment (Simulated)**  
-   - Conducted a full 3–6 month risk management cycle (risk appetite interviews, risk identification, scoring, treatment planning).  
-   - Built a risk register and heat map aligned with NIST 800-53 and FAIR-lite analysis.  
-   - Outcome: Prioritized top 10 risks and built a remediation roadmap.  
+- [Enterprise Risk Assessment (Simulated)](projects/risk-assessment.md)  
+  End-to-end risk cycle: risk appetite interviews, risk register, FAIR-lite scoring, treatments, and reporting.  
 
 ### Coming Soon
-- **Compliance Gap Analysis**: Comparing ISO 27001 vs. NIST 800-53 control sets.  
-- **Vendor Risk Management**: Vendor risk scoring, security questionnaires, and monitoring playbooks.  
-- **Business Continuity & Disaster Recovery**: Plans, tabletop exercises, and metrics.  
+- Compliance Gap Analysis (ISO 27001 vs NIST 800-53)  
+- Vendor Risk Management program with scoring model and remediation plans  
+- Business Continuity & Disaster Recovery tabletop exercise
 
 ---
 
