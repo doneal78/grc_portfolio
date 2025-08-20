@@ -1,48 +1,75 @@
 # GRC Portfolio Hub
 
-  [![Test Suite](https://github.com/ajy0127/grc_portfolio/actions/workflows/test.yml/badge.svg)](https://github.com/ajy0127/grc_portfolio/actions/workflows/test.yml)
-
+  [![Test Suite](https://github.com/your-username/grc_portfolio/actions/workflows/test.yml/badge.svg)](https://github.com/your-username/grc_portfolio/actions/workflows/test.yml)
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-In%20Development-yellow" alt="Status: In Development">
-  <img src="https://img.shields.io/badge/AWS-Security-orange" alt="AWS Security">
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen" alt="Status: Active">
   <img src="https://img.shields.io/badge/Focus-GRC-blue" alt="Focus: GRC">
+  <img src="https://img.shields.io/badge/Specialty-Risk%20%26%20Compliance-orange" alt="Specialty: Risk & Compliance">
   <img src="https://img.shields.io/badge/License-MIT-green" alt="License: MIT">
 </p>
 
+---
+
 ## Disclaimers
 
-1. This is a personal project and does not represent or reflect the views, opinions, or work of my current employer, Aquia, or any previous employers.
+1. This is a personal project and does not represent or reflect the views, opinions, or work of my past employers.  
+2. The code, configurations, and resources in this repository are for **educational purposes only**. They demonstrate security and GRC concepts and should not be used directly in production without proper review, testing, and customization.
 
-2. The code, configurations, and resources in this repository are for **educational purposes only**. While they demonstrate security concepts, they should not be used directly in production environments without proper review, testing, and customization for your specific security and compliance requirements.
+---
 
 ## Project Vision
 
-This GRC Portfolio Hub is my initiative to showcase hands-on Governance, Risk, and Compliance projects, blending technical security practices with compliance frameworks. My goal is to bridge the gap between theoretical knowledge and practical execution by documenting labs, case studies, and simulations that demonstrate real-world GRC engineering.
+This GRC Portfolio Hub is my personal initiative to showcase practical Governance, Risk, and Compliance work. It blends technical security practices with GRC frameworks, demonstrating how risk management and compliance can be applied in a way that supports business operations and security outcomes.
 
-The purpose of this portfolio is twofold:
-1. To provide a clear demonstration of my skills in GRC, risk management, and cloud security.
-2. To create a living resource that highlights my approach to aligning business risk with technical security controls.
+The portfolio is designed to:
+- Highlight hands-on AWS security and compliance labs I’ve completed.  
+- Provide case studies that walk through risk assessments, vendor risk reviews, and compliance gap analyses.  
+- Serve as a professional portfolio to share with hiring managers and peers.  
 
-This hub reflects my belief that effective cybersecurity comes from not just knowing frameworks, but applying them in practical, measurable ways.
+---
 
 ## About the Author
 
-I'm David O’Neal, a cybersecurity professional specializing in Governance, Risk, and Compliance with 3+ years of experience spanning vulnerability management, audit readiness, IAM, and risk analysis.
+I'm **David O’Neal**, a cybersecurity professional with 3+ years of experience in Governance, Risk, and Compliance (GRC), vulnerability management, audit readiness, and IAM.
 
-- **Security Consulting**: Delivered vulnerability remediation strategies and audit support for aerospace and industrial clients.
-- **Governance & Risk**: Built risk registers, performed compliance gap analyses, and developed security policies mapped to NIST 800-53 and ISO 27001.
-- **Hands-On Technical Work**: Implemented IAM controls, optimized patching workflows, and improved remediation timelines from weeks to under 72 hours.
-- **Focus Areas**: Cloud security foundations (AWS), risk management frameworks, and vendor risk assessment.
+- **Security Consulting**: Delivered vulnerability remediation strategies and audit support for aerospace and industrial clients.  
+- **Governance & Risk**: Built risk registers, performed compliance gap analyses, and developed security policies mapped to NIST 800-53 and ISO 27001.  
+- **Hands-On Security**: Improved remediation timelines from weeks to under 72 hours across hundreds of findings by streamlining patch management and IAM processes.  
+- **Focus Areas**: AWS security foundations, risk management frameworks (NIST, ISO), vendor risk, and compliance automation.  
 
-My professional focus is turning complex compliance frameworks into actionable security improvements that reduce risk and satisfy auditors—without slowing down the business.
+I’m passionate about bridging the gap between technical controls and business risk, creating audit-ready solutions that improve security without slowing down the organization.
+
+---
 
 ## What's Inside
 
-- **Portfolio Templates**: Customized templates for showcasing my GRC projects.
-- **Hands-on Labs**: Step-by-step labs I’ve completed in AWS security and compliance.
-- **Case Studies**: Written breakdowns of simulated risk assessments, vendor risk reviews, and compliance gap analyses.
-- **Learning Resources**: Notes and curated references that support each project.
+- **Portfolio Templates**: My customized portfolio layouts for organizing GRC projects.  
+- **Hands-on Labs**: Step-by-step AWS and GRC labs with documentation and artifacts.  
+- **Case Studies**: Simulated enterprise risk assessments, vendor risk reviews, and compliance gap analysis write-ups.  
+- **Resources**: Curated references and frameworks that guided each project.  
+
+---
+
+## Labs & Projects
+
+### Completed
+1. **AWS Account Governance and Security Foundations**  
+   - Implemented IAM Identity Center (SSO), MFA enforcement, AWS Config rules, and centralized monitoring via Security Hub.  
+   - Mapped controls to NIST CSF and CIS benchmarks.  
+   - Outcome: Established a baseline governance model with audit-ready evidence.  
+
+2. **Enterprise Risk Assessment (Simulated)**  
+   - Conducted a full 3–6 month risk management cycle (risk appetite interviews, risk identification, scoring, treatment planning).  
+   - Built a risk register and heat map aligned with NIST 800-53 and FAIR-lite analysis.  
+   - Outcome: Prioritized top 10 risks and built a remediation roadmap.  
+
+### Coming Soon
+- **Compliance Gap Analysis**: Comparing ISO 27001 vs. NIST 800-53 control sets.  
+- **Vendor Risk Management**: Vendor risk scoring, security questionnaires, and monitoring playbooks.  
+- **Business Continuity & Disaster Recovery**: Plans, tabletop exercises, and metrics.  
+
+---
 
 ## Repository Structure
 
@@ -51,12 +78,12 @@ This repository is part of a progressive release strategy for my upcoming book [
 ```
 GRC_Portfolio/
 ├── README.md - You are here!
-├── CONTRIBUTING.md - Guidelines for contributors
-├── LICENSE - Project license
-├── portfolio-templates/ - Templates and examples for your GRC portfolio
+├── portfolio-templates/ - Templates and examples for portfolio pages
+├── projects/ - Project case studies and artifacts
+│ ├── aws-account-governance.md
+│ └── risk-assessment.md
 ├── labs/ - Hands-on AWS security labs with full code and documentation
-│   └── lab-1-account-governance/ - AWS account security foundations 
-├── resources/ - AWS security services guide
+├── resources/ - AWS/GRC resources and learning references
 └── config/ - Configuration files for testing and development
 ```
 
@@ -125,12 +152,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 This project is inspired by the need for practical, hands-on resources for GRC professionals looking to demonstrate their technical capabilities in AWS security implementation.
 
+
+---
+
 ## Contact
 
-Let’s connect!  
+Want to connect or learn more?  
+
 - **LinkedIn**: [linkedin.com/in/david-oneal](https://www.linkedin.com/in/david-oneal)  
 - **Email**: onealdavide@gmail.com  
 
 ---
 
-<p align="center">Created for the GRC community</p>
+<p align="center">Created for the GRC community • Built by David O’Neal</p>
+
