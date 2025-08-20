@@ -18,30 +18,31 @@
 
 ## Project Vision
 
-This GRC Portfolio Hub is my initiative to empower Governance, Risk, and Compliance professionals in showcasing their practical AWS GRC engineering implementation skills. Drawing from my 15 years of cybersecurity experience and deep expertise in GRC Engineering, I've created this repository to bridge the gap between theoretical knowledge and hands-on expertise by providing ready-to-deploy labs, comprehensive guidance, and a structured portfolio framework.
+This GRC Portfolio Hub is my initiative to showcase hands-on Governance, Risk, and Compliance projects, blending technical security practices with compliance frameworks. My goal is to bridge the gap between theoretical knowledge and practical execution by documenting labs, case studies, and simulations that demonstrate real-world GRC engineering.
 
-My mission is to create the industry's premier open-source resource for GRC professionals to demonstrate practical AWS GRC engineering skills through guided, hands-on experiences that directly align with employer needs and AWS best practices.
+The purpose of this portfolio is twofold:
+1. To provide a clear demonstration of my skills in GRC, risk management, and cloud security.
+2. To create a living resource that highlights my approach to aligning business risk with technical security controls.
+
+This hub reflects my belief that effective cybersecurity comes from not just knowing frameworks, but applying them in practical, measurable ways.
 
 ## About the Author
 
-I'm [AJ Yawn](https://www.linkedin.com/in/ajyawn/), a cybersecurity professional with nearly 15 years of experience specializing in GRC Engineering and compliance automation. My journey includes:
+I'm David O’Neal, a cybersecurity professional specializing in Governance, Risk, and Compliance with 3+ years of experience spanning vulnerability management, audit readiness, IAM, and risk analysis.
 
-- **Military Leadership**: Served as a U.S. Army Officer in the Signal Corps, achieving the rank of Captain
-- **Consulting Excellence**: At Coalfire, helped grow the compliance practice from 9 to 100+ people, advancing from junior auditor to principal consultant
-- **Entrepreneurial Success**: Founded ByteChek, a compliance automation startup that achieved $1M+ Annual Recurring Revenue, focusing on SOC 2 and HIPAA automation
-- **Corporate Innovation**: Served as a Partner at Armanino (Top 20 CPA firm), leading product and innovation initiatives including a audit automation tool. 
-- **LinkedIn Learning and SANS Instrucutor**: Teach courses on cloud compliance and automation at the SANS Institute and have educated over 125K learners on LinkedIn Learning including GRC courses. 
-- **Current Role**: Director of GRC Engineering at Aquia
+- **Security Consulting**: Delivered vulnerability remediation strategies and audit support for aerospace and industrial clients.
+- **Governance & Risk**: Built risk registers, performed compliance gap analyses, and developed security policies mapped to NIST 800-53 and ISO 27001.
+- **Hands-On Technical Work**: Implemented IAM controls, optimized patching workflows, and improved remediation timelines from weeks to under 72 hours.
+- **Focus Areas**: Cloud security foundations (AWS), risk management frameworks, and vendor risk assessment.
 
-Throughout my career, I've been driven by the mission to make compliance more efficient and accessible through automation and engineering principles. This portfolio hub represents a culmination of my experiences and lessons learned in GRC Engineering.
+My professional focus is turning complex compliance frameworks into actionable security improvements that reduce risk and satisfy auditors—without slowing down the business.
 
 ## What's Inside
 
-- **Portfolio Templates**: Professional templates for creating your GRC portfolio, optimized for GitHub and ready to showcase your skills to potential employers
-- **Hands-on Labs**: Comprehensive, step-by-step labs covering core AWS security domains
-- **Full Code Implementations**: Complete CloudFormation templates for all labs
-- **Advanced Challenges**: Stretch goals and real-world scenarios to demonstrate advanced skills
-- **Learning Resources**: Curated references, comparison charts, and learning paths
+- **Portfolio Templates**: Customized templates for showcasing my GRC projects.
+- **Hands-on Labs**: Step-by-step labs I’ve completed in AWS security and compliance.
+- **Case Studies**: Written breakdowns of simulated risk assessments, vendor risk reviews, and compliance gap analyses.
+- **Learning Resources**: Notes and curated references that support each project.
 
 ## Repository Structure
 
@@ -74,16 +75,15 @@ GRC_Portfolio/
 
 ## Labs Overview
 
-Currently available:
+Currently included:
 
-1. **AWS Account Governance and Security Foundations** - Learn how to establish secure AWS account configurations, implement security baselines, and monitor account-level security posture.
+1. **AWS Account Governance and Security Foundations** – Implemented IAM Identity Center (SSO), MFA enforcement, AWS Config rules, Security Hub, and cost controls aligned with CIS benchmarks.
+2. **Enterprise Risk Assessment (Simulated)** – Created a risk register, scored risks (likelihood × impact), mapped controls, and proposed treatments with measurable KPIs.
 
-Each lab includes:
-- Clear learning objectives mapped to AWS Well-Architected Framework
-- Step-by-step implementation guides
-- Complete code in CloudFormation
-- Validation checklists and troubleshooting guides
-- Advanced challenges to extend your learning
+Planned additions:
+- Compliance gap analysis (ISO 27001 vs NIST 800-53 baseline)
+- Vendor risk assessment framework
+- Business continuity and incident response planning
 
 ## Future Labs (Coming Weekly)
 
@@ -127,7 +127,9 @@ This project is inspired by the need for practical, hands-on resources for GRC p
 
 ## Contact
 
-If you have questions or feedback, please open an issue in this repository.
+Let’s connect!  
+- **LinkedIn**: [linkedin.com/in/david-oneal](https://www.linkedin.com/in/david-oneal)  
+- **Email**: onealdavide@gmail.com  
 
 ---
 
