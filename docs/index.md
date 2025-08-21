@@ -22,12 +22,12 @@ title: Home
       <p>Identity Center, Config, Security Hub, Budgets—controls with screenshots & triage.</p>
       <span class="pill">Hands-on</span>
     </a>
-    <a class="card" href="{{ '/projects/risk-assessment/' | relative_url }}">
+    <a class="card" href="{{ '/projects/risk-assessment/' | relative_url }}">...</a>
       <h3>Risk Assessment (Simulated)</h3>
       <p>Risk register, FAIR-lite scoring, treatment plan, and exec summary.</p>
       <span class="pill">Methodology</span>
     </a>
-    <a class="card" href="{{ '/projects/aws-account-governance' | relative_url }}">
+    <a class="card" href="{{ '/projects/aws-account-governance/' | relative_url }}">...</a>
       <h3>AWS Account Governance</h3>
       <p>Guardrails & least privilege mapped to NIST CSF with artifacts.</p>
       <span class="pill">Case Study</span>
@@ -38,8 +38,8 @@ title: Home
 <section id="projects" class="section">
   <h2>Projects</h2>
   <ul class="arrow-list">
-    <li><a href="{{ '/projects/aws-account-governance' | relative_url }}">AWS Account Governance — case study</a></li>
-    <li><a href="{{ '/projects/risk-assessment' | relative_url }}">Enterprise Risk Assessment — register + scoring</a></li>
+    <li><a class="card" href="{{ '/projects/aws-account-governance/' | relative_url }}">...</a>AWS Account Governance — case study</a></li>
+    <li><a class="card" href="{{ '/projects/risk-assessment/' | relative_url }}">...</a>Enterprise Risk Assessment — register + scoring</a></li>
   </ul>
 </section>
 
