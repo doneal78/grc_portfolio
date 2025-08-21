@@ -22,7 +22,7 @@ title: Home
       <p>Identity Center, Config, Security Hub, Budgets—controls with screenshots & triage.</p>
       <span class="pill">Hands-on</span>
     </a>
-    <a class="card" href="{{ '/projects/risk-assessment' | relative_url }}">
+    <a class="card" href="{{ '/projects/risk-assessment/' | relative_url }}">
       <h3>Risk Assessment (Simulated)</h3>
       <p>Risk register, FAIR-lite scoring, treatment plan, and exec summary.</p>
       <span class="pill">Methodology</span>
