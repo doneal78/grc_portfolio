@@ -3,10 +3,13 @@ layout: default
 title: AWS Account Governance — Case Study
 ---
 
+# AWS Account Governance — Case Study
+
+**Contents**
 * TOC
 {:toc}
 
-This case study shows a pragmatic baseline for AWS account governance: strong identity, continuous compliance, centralized findings, and cost guardrails.
+This case study shows a pragmatic baseline for AWS account governance...
 
 ## Objectives
 - Enforce MFA and least-privilege using IAM Identity Center.
