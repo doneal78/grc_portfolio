@@ -1,0 +1,11 @@
+title: David O’Neal — GRC & Security Engineering
+description: Hands-on governance, risk, and security artifacts you can actually use.
+theme: jekyll-theme-cayman
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+plugins:
+  - jekyll-seo-tag
+github:
+  is_project_page: false
+author: David O’Neal
