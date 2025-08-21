@@ -27,11 +27,19 @@ Demonstrate AWS account governance and baseline security setup for a small-to-me
 - Enforces separation of duties: admin vs. audit vs. billing.
 - Sets the stage for org-wide scaling (SCPs and additional accounts later).
 
-**Artifacts**
-- ![SSO Tiles](/assets/img/sso-portal-tiles.png)
-- ![Assignments](/assets/img/identity-center-assignments.png)
-- ![MFA Required](/assets/img/identity-center-mfa-required.png)
-- ![Billing Access](/assets/img/billing-iam-access.png)
+### Evidence
+
+![SSO access portal tiles showing AdminAccess, SecurityAudit, and Billing roles](../assets/img/sso-portal-tiles.png)  
+*SSO access portal with separate tiles for **AdminAccess** (admin tasks), **SecurityAudit** (read-only inspections), and **Billing** (costs/payments). This demonstrates least-privilege role separation and that daily work no longer uses the root user.*
+
+![Identity Center Assignments page mapping user → account → AdminAccess/SecurityAudit/Billing](../assets/img/identity-center-assignments.png)  
+*Assignments view proving my user is bound to the AWS account with three permission sets: **AdminAccess**, **SecurityAudit**, and **Billing**. This is the “who can do what, where” evidence.*
+
+![Identity Center MFA settings configured to prompt every sign-in; Authenticator app and security keys allowed; enrollment required](../assets/img/identity-center-mfa-required.png)  
+*MFA policy set to **always-on** (prompt every sign-in). Allowed methods: **Authenticator app (TOTP)** and **FIDO2 security keys**. Enrollment is **required** at first sign-in. This enforces strong authentication at the SSO layer.*
+
+![Billing console setting enabling IAM user and role access to Billing](../assets/img/billing-iam-access.png)  
+*Billing console setting **IAM user and role access to Billing: Enabled**. Required so Identity Center roles (e.g., **Billing**) can actually open the Billing & Cost Management console.*
 
 **Control Mapping**
 - **NIST CSF:** PR.AC-1/4 (Access control), ID.AM-1 (Asset mgmt)
@@ -44,6 +52,7 @@ Demonstrate AWS account governance and baseline security setup for a small-to-me
 - User can assume **AdminAccess**, **SecurityAudit**, **Billing** via the SSO portal.
 - Billing console opens with the **Billing** role.
 
+
 ---
 
 ## Control Mapping (platform baseline)
@@ -54,13 +63,10 @@ Demonstrate AWS account governance and baseline security setup for a small-to-me
 ---
 
 ## Artifacts (platform baseline)
-- [Architecture Diagram](../assets/img/aws-gov-architecture.png)  
-- [Control-to-Service Matrix](../assets/control-matrix.csv)  
-- [Security Hub Baseline Checklist](../assets/aws-securityhub-baseline.md)  
-- ![SSO Tiles](/assets/img/sso-portal-tiles.png)  
-- ![Assignments](/assets/img/identity-center-assignments.png)  
-- ![MFA Required](/assets/img/identity-center-mfa-required.png)  
-- ![Billing Access](/assets/img/billing-iam-access.png)
+- [Architecture Diagram](../assets/img/aws-gov-architecture.png)
+- [Control-to-Service Matrix](../assets/control-matrix.csv)
+- [Security Hub Baseline Checklist](../assets/aws-securityhub-baseline.md)
+
 
 ---
 
