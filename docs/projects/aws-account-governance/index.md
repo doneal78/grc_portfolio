@@ -3,8 +3,6 @@ layout: default
 title: AWS Account Governance — Case Study
 ---
 
-# AWS Account Governance — Case Study
-
 * TOC
 {:toc}
 
