@@ -1,0 +1,7 @@
+.hero{
+  background-image:
+    linear-gradient(135deg, rgba(12,18,37,.85), rgba(10,15,31,.9)),
+    url('{{ "/assets/img/hero.webp" | relative_url }}');
+  background-size: cover;
+  background-position: center;
+}
