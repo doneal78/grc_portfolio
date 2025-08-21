@@ -13,6 +13,7 @@ This case study shows a pragmatic baseline for AWS account governance: strong id
 - Continuously check configuration drift with AWS Config.
 - Centralize findings in Security Hub for triage.
 - Capture audit evidence; control cost with Budgets.
+...
 
 ## Architecture
 - **IAM Identity Center (SSO)** with MFA
