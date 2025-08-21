@@ -1,3 +1,6 @@
 Control, AWS Service, Status
 Placeholder-Control-1, AWS Config, To be completed
 Placeholder-Control-2, IAM, To be completed
+ID-02,SSO portal with least-privilege roles (Admin/SecurityAudit/Billing),IAM Identity Center,Implemented,Assignments verified via portal tiles
+ID-03,MFA required for all SSO users,IAM Identity Center,Implemented,Always-on TOTP/FIDO2 and forced enrollment at first sign-in
+BI-01,Enable IAM user/role access to Billing,Billing Console,Implemented,Billing role opens Billing & Cost Management successfully
