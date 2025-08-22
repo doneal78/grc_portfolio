@@ -15,10 +15,10 @@ Useful links, references, and reading materials that influenced this portfolio.
 ## Tools
 - [AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/what-is-aws-config.html)
 - [AWS Security Hub](https://docs.aws.amazon.com/securityhub/)
-- [CloudTrail](https://docs.aws.amazon.com/awscloudtrail/)
+- [AWS CloudTrail](https://docs.aws.amazon.com/cloudtrail/)
 - [Fair Institute](https://www.fairinstitute.org/)
 
 ## Reading & Learning
-- [Open FAIR Book of Knowledge](https://publications.opengroup.org/books/g180)
+- [Open FAIR Body of Knowledge](https://publications.opengroup.org/standards/security/g180)
 - [SANS Security Policy Templates](https://www.sans.org/information-security-policy/)
 - [GRC Engineering (AJ Yawn)](https://grcengineeringbook.com/)
