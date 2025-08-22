@@ -1,18 +1,32 @@
 ---
 layout: default
-title: Lab — AWS Account Governance & Security Foundations
+title: AWS Governance Lab
 ---
 
-# Lab — AWS Account Governance & Security Foundations
+# AWS Governance Lab
 
-Hands-on build implementing Identity Center + MFA, AWS Config rules, Security Hub, CloudTrail, and Budgets.
+Hands-on lab showing how to implement AWS governance controls in a sandbox environment.
 
-## Steps
-1. Enable **IAM Identity Center** → add users/groups → enforce **MFA**.
-2. Turn on **AWS Config** → enable managed rules (CIS subset).
-3. Enable **Security Hub** → select CIS/AWS Foundational checks.
-4. Create **CloudTrail** → management events.
-5. Create **Budgets** → monthly threshold email alert.
+---
 
-## Evidence
-(_Upload screenshots later to_ `docs/assets/img/labs/aws/`.)
+### Objectives
+- Stand up AWS Identity Center  
+- Configure AWS Config and Security Hub  
+- Apply budget alerts  
+- Capture screenshots as evidence  
+
+---
+
+### Lab Steps
+1. Enable **AWS Organizations** and create sandbox accounts.  
+2. Apply **Service Control Policies** to restrict regions and enforce MFA.  
+3. Configure **AWS Config** to monitor key resources.  
+4. Enable **AWS Security Hub** for continuous compliance checks.  
+5. Set **budget alerts** for cost governance.  
+
+---
+
+### Deliverables
+- Screenshots of Identity Center setup  
+- Config compliance dashboard snapshots  
+- Budget alerts and notifications evidence  
