@@ -8,8 +8,10 @@ title: Home
     <h1>GRC + Security Engineering Portfolio</h1>
     <p class="lead">Governance that scales, risk programs tied to business impact, and audit-ready artifacts.</p>
     <div class="cta-row">
-      <a class="btn btn-primary" href="#projects">See Projects</a>
-      <a class="btn btn-ghost" href="#templates">Templates & Resources</a>
+      <!-- Scrolls to Projects on this page -->
+      <a class="btn btn-primary" href="{{ '/#projects' | relative_url }}">See Projects</a>
+      <!-- Opens Templates page -->
+      <a class="btn btn-ghost" href="{{ '/portfolio-templates/' | relative_url }}">Templates & Resources</a>
     </div>
   </div>
 </header>
@@ -39,17 +41,17 @@ title: Home
 
 <section id="projects" class="section">
   <h2>Projects</h2>
-  <ul class="arrow-list">
-    <li>[AWS Account Governance — case study]({{ '/projects/aws-account-governance/' | relative_url }})</li>
-    <li>[Enterprise Risk Assessment — register + scoring]({{ '/projects/risk-assessment/' | relative_url }})</li>
+  <ul class="arrow-list arrow-list--cyan">
+    <li><a href="{{ '/projects/aws-account-governance/' | relative_url }}">AWS Account Governance — case study</a></li>
+    <li><a href="{{ '/projects/risk-assessment/' | relative_url }}">Enterprise Risk Assessment — register + scoring</a></li>
   </ul>
 </section>
 
 <section id="templates" class="section">
   <h2>Templates & Resources</h2>
-  <ul class="arrow-list">
-    <li>[Portfolio templates (policy, SOP, risk register)]({{ '/portfolio-templates/' | relative_url }})</li>
-    <li>[Reading list & useful links]({{ '/resources/' | relative_url }})</li>
+  <ul class="arrow-list arrow-list--magenta">
+    <li><a href="{{ '/portfolio-templates/' | relative_url }}">Portfolio templates (policy, SOP, risk register)</a></li>
+    <li><a href="{{ '/resources/' | relative_url }}">Reading list & useful links</a></li>
   </ul>
 </section>
 
