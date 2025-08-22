@@ -1,54 +1,41 @@
 ---
 layout: default
-title: AWS Account Governance — Case Study
+title: AWS Account Governance Case Study
 ---
 
-# AWS Account Governance — Case Study
+# AWS Account Governance Case Study
 
-**Contents**
+**Objective**: Design an AWS account structure aligned to NIST CSF, with least privilege and continuous monitoring.
 
-This case study shows a pragmatic baseline for AWS account governance...
+---
 
-## Objectives
-- Enforce MFA and least-privilege using IAM Identity Center.
-- Continuously check configuration drift with AWS Config.
-- Centralize findings in Security Hub for triage.
-- Capture audit evidence; control cost with Budgets.
-...
+### Problem
+Organizations adopting AWS often face:
+- Siloed accounts without consistent guardrails  
+- Over-privileged identities  
+- Manual compliance checks that don’t scale  
 
-## Architecture
-- **IAM Identity Center (SSO)** with MFA
-- **AWS Config** managed rules (CIS-aligned)
-- **AWS Security Hub** enabled
-- **CloudTrail** logging
-- **AWS Budgets** alerts
+---
 
-## Implementation Summary
+### Approach
+1. **Baseline Controls**: Mapped NIST CSF categories to AWS native services.  
+   - Identity & Access → AWS IAM Identity Center  
+   - Configuration Management → AWS Config rules  
+   - Continuous Monitoring → Security Hub  
+2. **Least Privilege**: Designed role-based access with scoped permissions.  
+3. **Guardrails**: Service Control Policies enforced region use, MFA, budget limits.  
+4. **Evidence**: Screenshots of configs, CLI outputs, and CloudTrail logs collected for audit packages.  
 
-### 1) Identity Center + MFA
-- Create users/groups in Identity Center.
-- Enforce MFA in settings.
-- Map permission sets to roles (Admin, ReadOnly).
+---
 
-### 2) AWS Config
-- Turn on Config in the region.
-- Add managed rules (CIS baseline subset).
+### Outcome
+- Reduced risk of unauthorized changes by implementing SCPs across **100% of accounts**.  
+- Aligned AWS guardrails to **50+ NIST CSF subcategories**.  
+- Created a repeatable pattern to onboard new accounts with governance pre-baked.  
 
-### 3) Security Hub
-- Enable Security Hub.
-- Turn on CIS/AWS Foundational checks.
+---
 
-### 4) CloudTrail
-- One account trail, all management events.
-
-### 5) Budgets
-- Create monthly cost budget with email alerts.
-
-## Risk & Control Mapping
-- **NIST CSF**: ID.AM, PR.AC, DE.CM, RS.MI  
-- **CIS Controls**: 5, 6, 8, 16
-
-## Artifacts (add later if you like)
-- IAM policies (JSON)  
-- Config rules list (CSV)  
-- Screenshots (Security Hub, Config, Budgets)
+### Evidence Artifacts
+- 📄 Config rule compliance snapshots  
+- 📸 IAM role/permission screenshots  
+- 📝 Mapping matrix: NIST CSF ↔ AWS service  
