@@ -4,196 +4,114 @@
 
 @import "{{ site.theme }}";
 
-/* ================================
-   Cyber GRC Neon Theme (Consolidated)
-   - Centers layout
-   - Neon cyan/magenta palette
-   - Hero gradient (optional image)
-   - Card grid polish
-   - Arrow-list panels for Projects/Resources
-   - Sticky, tidy nav support
-   ================================= */
-
-/* ---------- Color System ---------- */
-:root{
+:root {
   --bg: #0a0f1f;
-  --bg2:#0c132a;
+  --bg2: #0c132a;
   --fg: #e6f1ff;
-  --muted:#9db0c9;
+  --muted: #9db0c9;
 
-  --cyan:    #12f0ff;   /* neon cyan */
-  --cyan-2:  #07b9c5;   /* cyan shade for gradients */
-  --magenta: #ff2bd6;   /* neon magenta */
+  --cyan: #12f0ff;
+  --cyan-2: #07b9c5;
+  --magenta: #ff2bd6;
+  --blue: #12d2ff;
 
-  --blue: #12d2ff;      /* defined to avoid undefined refs */
-
-  --card:  #121a2e;
+  --card: #121a2e;
   --card2: #16213a;
 
   --ring: rgba(18,240,255,.45);
   --edge: rgba(255,255,255,.08);
 }
 
-/* --------- Base / Layout ---------- */
 html, body {
   background: radial-gradient(1200px 800px at 10% -10%, #0c1322 0%, var(--bg) 45%, #060a14 100%);
   color: var(--fg);
-}
-body, .page-content {
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
-/* Center everything nicely */
-.wrapper{
+.wrapper {
   max-width: 1150px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
-/* Sticky nav helper (your nav HTML lives in default.html) */
-.site-nav { 
-  position: sticky; top: 0; z-index: 50;
-  background: rgba(8, 12, 24, 0.75);
-  backdrop-filter: blur(6px);
-  padding-top: .6rem; padding-bottom: .6rem;
-  border-bottom: 1px solid rgba(255,255,255,.05);
-  display:flex; gap:1rem; align-items:center;
-  flex-wrap: wrap; row-gap:.25rem;
-}
-.site-nav a { white-space: nowrap; }
-
-/* -------- Hero (Gradient + Center) -------- */
+/* Hero */
 .hero {
-  position: relative;
   border-radius: 18px;
-  overflow: hidden;
   margin: 1rem 0 2rem;
-
-  /* layered glow gradients */
   background:
     radial-gradient(900px 500px at 80% 10%, rgba(18,240,255,.10), transparent 60%),
     radial-gradient(700px 400px at 15% 85%, rgba(255,43,214,.10), transparent 60%),
     linear-gradient(135deg, #0b1226 0%, #0e1631 55%, #0a0f1f 100%);
-
   box-shadow: 0 16px 40px rgba(0,0,0,.55), inset 0 0 0 1px rgba(255,255,255,.04);
+  text-align: center;
 }
-.hero::after{
-  content:""; position:absolute; inset:0;
-  background: repeating-linear-gradient(to bottom, rgba(255,255,255,.03) 0 1px, transparent 1px 3px);
-  pointer-events:none;
+.hero__inner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2.6rem 1.2rem;
 }
-.hero__inner { 
-  max-width: 980px; 
-  margin: 0 auto; 
-  padding: 2.6rem 1.2rem; 
-  text-align: center; 
+.hero h1 {
+  margin: 0 0 .5rem;
+  font-size: 2.35rem;
 }
-.hero h1{ margin:0 0 .5rem; font-size:2.35rem; letter-spacing:.2px; }
-.hero .lead{ color:var(--muted); max-width:56rem; margin:0 auto 1.25rem; font-size:1.1rem; }
-.cta-row{ display:flex; gap:.8rem; justify-content:center; flex-wrap:wrap; }
+.hero .lead {
+  color: var(--muted);
+  max-width: 56rem;
+  margin: 0 auto 1.25rem;
+  font-size: 1.1rem;
+}
+.cta-row {
+  display: flex;
+  gap: .8rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-/* OPTIONAL: add image behind gradient
-.hero{
-  background-image:
-    linear-gradient(135deg, rgba(12,18,37,.85), rgba(10,15,31,.92)),
-    url('{{ "/assets/img/hero.webp" | relative_url }}');
-  background-size: cover; background-position: center;
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: .7rem 1.1rem;
+  font-weight: 800;
+  border-radius: 999px;
+  text-decoration: none;
 }
-*/
-
-/* ------------- Buttons ------------- */
-.btn{ 
-  display:inline-block; 
-  padding:.7rem 1.1rem; 
-  font-weight:800; 
-  border-radius:999px; 
-  text-decoration:none; 
-}
-.btn-primary{
+.btn-primary {
   background: linear-gradient(180deg, var(--cyan), var(--cyan-2));
-  color:#07131a; 
-  box-shadow: 0 8px 24px rgba(18,240,255,.25), 0 0 0 1px rgba(18,240,255,.25);
+  color: #07131a;
+  box-shadow: 0 8px 24px rgba(18,240,255,.25);
 }
-.btn-primary:hover{ transform: translateY(-1px); }
-.btn-ghost{
+.btn-ghost {
   background: linear-gradient(180deg, rgba(255,43,214,.15), rgba(255,43,214,.12));
-  border:1px solid rgba(255,255,255,.12); 
+  border: 1px solid rgba(255,255,255,.12);
   color: var(--fg);
-  box-shadow: 0 8px 24px rgba(255,43,214,.18), 0 0 0 1px rgba(255,43,214,.18);
-}
-.btn-ghost:hover{ border-color: rgba(255,255,255,.3); }
-
-/* -------- Sections / Cards ---------- */
-.section{ margin:2.75rem 0; }
-.section h2{ margin:0 0 1rem; }
-
-/* Card grid */
-.card-grid{ 
-  display:grid; 
-  grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); 
-  gap:1.1rem; 
 }
 
-/* Card look */
-.card{
-  position:relative; 
-  display:flex; flex-direction:column; justify-content:space-between;
-  color:var(--fg); text-decoration:none;
+/* Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.1rem;
+}
+.card {
   background: linear-gradient(180deg, var(--card), var(--card2));
-  border-radius:14px; 
-  padding:1rem; 
-  min-height:168px;
-  box-shadow: 0 14px 28px rgba(0,0,0,.35), 0 0 0 1px rgba(255,255,255,.04);
-  transition: transform .14s ease, box-shadow .14s ease;
+  border-radius: 14px;
+  padding: 1rem;
+  min-height: 168px;
+  box-shadow: 0 14px 28px rgba(0,0,0,.35);
+  transition: transform .14s ease;
 }
-.card:hover{ 
-  transform: translateY(-2px); 
-  box-shadow: 0 18px 40px rgba(0,0,0,.45), 0 0 24px rgba(18,240,255,.16); 
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(0,0,0,.45);
 }
-.card h3{ margin:.25rem 0 .25rem; font-size:1.05rem; }
-.card p{ margin:0 0 .9rem; color:var(--muted); }
 
-/* Little magenta label */
-.pill{
-  display:inline-block; 
-  font-size:.78rem; 
-  font-weight:800; 
-  letter-spacing:.3px; 
-  padding:.28rem .6rem; 
-  border-radius:999px; 
+/* Pills */
+.pill {
+  display: inline-block;
+  font-size: .78rem;
+  font-weight: 800;
+  padding: .28rem .6rem;
+  border-radius: 999px;
   background: linear-gradient(180deg, rgba(255,43,214,.25), rgba(255,43,214,.18));
-  color:#ffd8f6;
+  color: #ffd8f6;
 }
-
-/* ---------- Arrow List Panels (Projects / Templates) ---------- */
-.arrow-list{ 
-  list-style:none; padding:.8rem .9rem; margin:0; 
-  background: linear-gradient(180deg, rgba(18,240,255,.06), rgba(18,240,255,.03));
-  border-radius: 12px; 
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,.05);
-}
-.arrow-list li{ margin:.45rem 0; }
-.arrow-list a{ 
-  position:relative; padding-left:1.25rem; 
-  text-decoration:none; color:var(--fg);
-}
-.arrow-list a:before{ content:"➜"; position:absolute; left:0; top:0; color: var(--cyan); }
-
-/* Color variants so the two panels don't look the same */
-.arrow-list--cyan{
-  background: linear-gradient(180deg, rgba(18,240,255,.08), rgba(18,240,255,.04));
-  box-shadow: inset 0 0 0 1px rgba(18,240,255,.14);
-}
-.arrow-list--magenta{
-  background: linear-gradient(180deg, rgba(255,43,214,.08), rgba(255,43,214,.04));
-  box-shadow: inset 0 0 0 1px rgba(255,43,214,.14);
-}
-
-/* ---------- Links / Footer ---------- */
-a{ color: var(--fg); text-underline-offset: 2px; }
-a:hover { text-decoration: underline; text-decoration-thickness: 2px; }
-
-.site-foot{ margin:2rem 0 1rem; color:var(--muted); text-align:center; }
-
-/* Smooth scroll for anchor links (if you use #anchors) */
-html { scroll-behavior: smooth; }
