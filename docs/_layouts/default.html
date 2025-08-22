@@ -9,21 +9,33 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="page-content">
-    <div class="wrapper">
-      <nav class="site-nav">
-        <a class="site-brand" href="{{ '/' | relative_url }}">David O’Neal</a>
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/projects/aws-account-governance/' | relative_url }}">AWS Governance</a>
-        <a href="{{ '/projects/risk-assessment/' | relative_url }}">Risk Assessment</a>
-        <a href="{{ '/labs/aws-account-governance/' | relative_url }}">Labs</a>
-        <a href="{{ '/portfolio-templates/' | relative_url }}">Templates</a>
-        <a href="{{ '/resources/' | relative_url }}">Resources</a>
-        <a href="{{ '/assets/resume.pdf' | relative_url }}" target="_blank">Resume</a>
-      </nav>
+  <a class="skip" href="#content">Skip to content</a>
 
+  <header class="site-header">
+    <nav class="site-nav wrapper" aria-label="Main">
+      <a class="site-brand" href="{{ '/' | relative_url }}" aria-current="{% if page.url == '/' %}page{% endif %}">David O’Neal</a>
+      {%- assign here = page.url -%}
+      <a href="{{ '/' | relative_url }}" class="{% if here == '/' %}active{% endif %}">Home</a>
+      <a href="{{ '/projects/aws-account-governance/' | relative_url }}" class="{% if here contains '/projects/aws-account-governance/' %}active{% endif %}">AWS Governance</a>
+      <a href="{{ '/projects/risk-assessment/' | relative_url }}" class="{% if here contains '/projects/risk-assessment/' %}active{% endif %}">Risk Assessment</a>
+      <a href="{{ '/labs/aws-account-governance/' | relative_url }}" class="{% if here contains '/labs/' %}active{% endif %}">Labs</a>
+      <a href="{{ '/portfolio-templates/' | relative_url }}" class="{% if here contains '/portfolio-templates/' or here contains '/templates/' %}active{% endif %}">Templates</a>
+      <a href="{{ '/resources/' | relative_url }}" class="{% if here contains '/resources/' %}active{% endif %}">Resources</a>
+      <a href="{{ '/resume.pdf' | relative_url }}" target="_blank" rel="noopener">Resume</a>
+    </nav>
+  </header>
+
+  <main id="content" class="page-content">
+    <div class="wrapper">
       {{ content }}
     </div>
-  </div>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrapper">
+      <small>© <span id="year"></span> David O’Neal • <a href="mailto:onealdavide@gmail.com">onealdavide@gmail.com</a></small>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
 </body>
 </html>
