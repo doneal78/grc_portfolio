@@ -90,3 +90,15 @@ a{ color: var(--blue); } a:hover{ text-decoration: underline; }
 
 /* Footer */
 .site-foot{ margin:2rem 0 1rem; color:var(--muted); text-align:center; }
+
+/* Make links clearer site-wide */
+a { text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+
+/* Keep the nav from wrapping weirdly on small screens */
+.site-nav { flex-wrap: wrap; row-gap: .25rem; }
+.site-nav a { white-space: nowrap; }
+
+/* Smooth scroll for in-page anchors (e.g., hero buttons) */
+html { scroll-behavior: smooth; }
+
