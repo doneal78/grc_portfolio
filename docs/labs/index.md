@@ -2,9 +2,19 @@
 layout: default
 title: Labs
 ---
-# Labs
-Quick intros + links.
 
-- **AWS Account Governance & Security Foundations**  
-  Artifacts: IAM, Config, Security Hub, budgets, screenshots.  
-  <a href="{{ '/labs/aws-account-governance.md' | relative_url }}">Open lab</a>
+# Labs
+
+**Contents**
+* TOC
+{:toc}
+
+Hands-on security governance and GRC exercises. Each lab demonstrates a practical setup with screenshots and artifacts that hiring managers can actually review.
+
+## Featured Lab
+- [AWS Account Governance Lab]({{ '/labs/aws-account-governance/' | relative_url }})
+
+## Upcoming Labs
+- Vendor Risk Assessment Lab  
+- Access Review Automation Lab  
+- Incident Response Drill
