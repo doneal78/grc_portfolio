@@ -8,9 +8,9 @@ title: Home
     <h1>GRC + Security Engineering Portfolio</h1>
     <p class="lead">Governance that scales, risk programs tied to business impact, and audit-ready artifacts.</p>
     <div class="cta-row">
-      <!-- Scrolls to Projects on this page -->
-      <a class="btn btn-primary" href="{{ '/#projects' | relative_url }}">See Projects</a>
-      <!-- Opens Templates page -->
+      <!-- Scrolls to the Projects section on this page (no reload) -->
+      <a class="btn btn-primary" href="#projects">See Projects</a>
+      <!-- Opens the Templates page -->
       <a class="btn btn-ghost" href="{{ '/portfolio-templates/' | relative_url }}">Templates & Resources</a>
     </div>
   </div>
