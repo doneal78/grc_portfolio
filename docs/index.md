@@ -17,7 +17,7 @@ title: Home
 <section class="section">
   <h2>Impact by the Numbers</h2>
   <ul>
-    <li>Cut access review cycle time <b>40%</b> via automation</li>
+    <li>Cut access review cycle time <b>40%</b> through automation</li>
     <li>Delivered audit evidence packages <b>2 weeks early</b></li>
     <li>Mapped AWS guardrails to <b>50+ NIST CSF controls</b></li>
   </ul>
@@ -42,4 +42,20 @@ title: Home
       <span class="pill">NIST CSF</span>
     </a>
   </div>
+</section>
+
+<section class="section">
+  <h2>How I Work</h2>
+  <ol>
+    <li>Start from <b>business impact</b> → map to NIST CSF, ISO 27001, CIS.</li>
+    <li>Prove controls with <b>audit-ready artifacts</b>: policies, SOPs, tickets, CLI output.</li>
+    <li><b>Automate the repetitive</b> — patching, access reviews, findings triage.</li>
+    <li>Write documentation that keeps audits from becoming archaeology.</li>
+  </ol>
+</section>
+
+<section class="section">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:onealdavide@gmail.com">onealdavide@gmail.com</a> • 
+     LinkedIn: <a href="https://www.linkedin.com/in/david-oneal/">/in/david-oneal</a></p>
 </section>
