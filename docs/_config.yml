@@ -9,3 +9,7 @@ plugins:
 github:
   is_project_page: false
 author: David O’Neal
+
+# For SEO previews
+logo: /assets/img/hero.webp
+image: /assets/img/hero.webp
