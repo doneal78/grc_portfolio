@@ -1,46 +1,38 @@
 ---
 layout: default
-title: Risk Assessment — Simulated
+title: Risk Assessment (Simulated)
 ---
 
-# Risk Assessment — Simulated
+# Risk Assessment (Simulated)
 
-This project demonstrates how to conduct a simulated enterprise risk assessment and create an actionable risk register.  
-The goal is to show end-to-end methodology from identifying risks to recommending treatments, aligned with industry frameworks.
+**Objective**: Demonstrate structured risk analysis using FAIR-lite scoring with a simulated dataset.
 
-## Objectives
-- Identify and score security risks across a fictional environment.
-- Apply likelihood × impact methodology with FAIR-lite scoring.
-- Build a risk register that management can actually use.
-- Recommend treatment options with clear ownership.
+---
 
-## Methodology
-1. **Risk Identification**  
-   - Interview key stakeholders.  
-   - Collect input from security events, vulnerability scans, and business processes.
+### Problem
+Many organizations track risks but struggle to:
+- Prioritize effectively  
+- Quantify business impact  
+- Translate findings into treatment plans  
 
-2. **Scoring & Prioritization**  
-   - Use likelihood × impact matrix.  
-   - Apply FAIR-lite methodology for quantification.
+---
 
-3. **Risk Register**  
-   - Document each risk with owner, impact, likelihood, score, and treatment plan.  
-   - Create in spreadsheet format for clarity and repeatability.
+### Approach
+1. **Risk Register**: Built sample register with 10 simulated risks.  
+2. **FAIR-Lite Scoring**: Applied qualitative impact × likelihood → heatmap.  
+3. **Treatment Plan**: Chose mitigation, acceptance, or transfer per risk.  
+4. **Evidence**: Documented in Markdown, with artifacts like control mappings and sample tickets.  
 
-4. **Treatment Planning**  
-   - Recommend mitigation, transfer, acceptance, or avoidance.  
-   - Assign remediation actions and timelines.
+---
 
-## Evidence / Artifacts
-- **Risk Register (Excel/CSV)** — sample with 10–15 risks.
-- **Scoring Matrix** — likelihood vs. impact heat map.
-- **Sample Treatment Plans** — written remediations tied to controls.
+### Outcome
+- Delivered a register showing **clear prioritization** of high-impact risks.  
+- Demonstrated a repeatable framework that can scale across business units.  
+- Showed how governance and risk tie directly into **business objectives**.  
 
-## Framework Mapping
-- **NIST CSF**: ID.RA, PR.IP, RS.MI  
-- **ISO 27001**: A.6.1 (risk management), A.18.2 (review of controls)
+---
 
-## Lessons Learned
-- Standardized scoring reduces bias and debate.  
-- Visual heat maps help executives grasp relative risk quickly.  
-- Linking risks to frameworks makes audit conversations smoother.
+### Evidence Artifacts
+- 📊 Risk register table (Markdown)  
+- 🗂️ FAIR-lite scoring worksheet  
+- 📝 Treatment plan for top 3 risks  
