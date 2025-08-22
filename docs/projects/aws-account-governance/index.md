@@ -6,8 +6,6 @@ title: AWS Account Governance — Case Study
 # AWS Account Governance — Case Study
 
 **Contents**
-* TOC
-{:toc}
 
 This case study shows a pragmatic baseline for AWS account governance...
 
