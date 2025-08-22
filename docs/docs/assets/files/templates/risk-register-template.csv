@@ -1,0 +1,2 @@
+ID,Risk,Owner,Likelihood (1-5),Impact (1-5),Score (=L*I),Treatment,DueDate,Status,Notes
+R-001,Example risk here,Team/Role,3,4,12,Mitigate,2025-10-01,Open,Initial entry
