@@ -3,58 +3,43 @@ layout: default
 title: Home
 ---
 
-<header class="hero">
+<section class="hero">
   <div class="hero__inner">
-    <h1>GRC + Security Engineering Portfolio</h1>
-    <p class="lead">Governance that scales, risk programs tied to business impact, and audit-ready artifacts.</p>
+    <h1>David O’Neal</h1>
+    <p class="lead">Cybersecurity & GRC Analyst — turning frameworks into audit-ready evidence and automating compliance at scale.</p>
     <div class="cta-row">
-      <!-- Scrolls to the Projects section on this page (no reload) -->
-      <a class="btn btn-primary" href="#projects">See Projects</a>
-      <!-- Opens the Templates page -->
-      <a class="btn btn-ghost" href="{{ '/portfolio-templates/' | relative_url }}">Templates & Resources</a>
+      <a href="/assets/resume.pdf" class="btn btn-primary">Resume</a>
+      <a href="/projects/aws-account-governance/" class="btn btn-ghost">Case Studies</a>
     </div>
   </div>
-</header>
+</section>
 
-<section id="highlights" class="section">
-  <h2>Highlights</h2>
+<section class="section">
+  <h2>Impact by the Numbers</h2>
+  <ul>
+    <li>Cut access review cycle time <b>40%</b> via automation</li>
+    <li>Delivered audit evidence packages <b>2 weeks early</b></li>
+    <li>Mapped AWS guardrails to <b>50+ NIST CSF controls</b></li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>Featured Projects</h2>
   <div class="card-grid">
-    <a class="card" href="{{ '/labs/aws-account-governance/' | relative_url }}">
+    <a href="/labs/aws-account-governance/" class="card">
       <h3>AWS Governance Lab</h3>
-      <p>Identity Center, Config, Security Hub, Budgets—controls with screenshots & triage.</p>
-      <span class="pill">Hands-on</span>
+      <p>Identity Center, Config, Security Hub, budgets, screenshots</p>
+      <span class="pill">AWS</span>
     </a>
-
-    <a class="card" href="{{ '/projects/risk-assessment/' | relative_url }}">
+    <a href="/projects/risk-assessment/" class="card">
       <h3>Risk Assessment (Simulated)</h3>
-      <p>Risk register, FAIR-lite scoring, treatment plan, and exec summary.</p>
-      <span class="pill">Methodology</span>
+      <p>Risk register, FAIR-lite scoring, treatment plan</p>
+      <span class="pill">FAIR</span>
     </a>
-
-    <a class="card" href="{{ '/projects/aws-account-governance/' | relative_url }}">
-      <h3>AWS Account Governance</h3>
-      <p>Guardrails & least-privilege mapped to NIST CSF with artifacts.</p>
-      <span class="pill">Case Study</span>
+    <a href="/projects/aws-account-governance/" class="card">
+      <h3>AWS Account Governance Case Study</h3>
+      <p>Guardrails, least privilege, NIST CSF mapping</p>
+      <span class="pill">NIST CSF</span>
     </a>
   </div>
 </section>
-
-<section id="projects" class="section">
-  <h2>Projects</h2>
-  <ul class="arrow-list arrow-list--cyan">
-    <li><a href="{{ '/projects/aws-account-governance/' | relative_url }}">AWS Account Governance — case study</a></li>
-    <li><a href="{{ '/projects/risk-assessment/' | relative_url }}">Enterprise Risk Assessment — register + scoring</a></li>
-  </ul>
-</section>
-
-<section id="templates" class="section">
-  <h2>Templates & Resources</h2>
-  <ul class="arrow-list arrow-list--magenta">
-    <li><a href="{{ '/portfolio-templates/' | relative_url }}">Portfolio templates (policy, SOP, risk register)</a></li>
-    <li><a href="{{ '/resources/' | relative_url }}">Reading list & useful links</a></li>
-  </ul>
-</section>
-
-<footer class="site-foot">
-  <small>© {{ site.time | date: '%Y' }} David O’Neal • <a href="https://www.linkedin.com/in/david-oneal/" target="_blank" rel="noopener">LinkedIn</a></small>
-</footer>
