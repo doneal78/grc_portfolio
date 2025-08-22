@@ -101,4 +101,5 @@ a:hover { text-decoration-thickness: 2px; }
 
 /* Smooth scroll for in-page anchors (e.g., hero buttons) */
 html { scroll-behavior: smooth; }
+.site-nav { position: sticky; top: 0; z-index: 50; background: rgba(8, 12, 24, 0.75); backdrop-filter: blur(6px); padding-top: .6rem; padding-bottom: .6rem; border-bottom: 1px solid rgba(255,255,255,.05); }
 
