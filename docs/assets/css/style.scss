@@ -147,3 +147,52 @@ ul.bullets{ margin:.5rem 0 0 1.2rem } ul.bullets li{ margin:.35rem 0 }
   line-height: 1.45;
   text-align: center;         /* captions centered */
 }
+
+/* === Download buttons (safe, Liquid-free) === */
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .75rem 1rem;
+  font-weight: 800;
+  border-radius: 999px;
+  text-decoration: none;
+  background: linear-gradient(180deg, var(--cyan), var(--cyan-2));
+  color: #07131a;
+  box-shadow: 0 0 0 1px rgba(0,234,255,.3), 0 12px 30px rgba(0,234,255,.25);
+}
+.btn-download:hover {
+  filter: saturate(110%);
+  transform: translateY(-1px);
+}
+
+.btn-view {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .72rem 1rem;
+  font-weight: 800;
+  border-radius: 999px;
+  text-decoration: none;
+  background: linear-gradient(180deg, rgba(255,43,214,.18), rgba(255,43,214,.14));
+  border: 1px solid rgba(255,255,255,.18);
+  color: var(--fg);
+  box-shadow: 0 0 0 1px rgba(255,43,214,.24), 0 8px 22px rgba(255,43,214,.18);
+}
+.btn-view:hover {
+  filter: saturate(110%);
+  transform: translateY(-1px);
+}
+
+.btn-download svg, .btn-view svg {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+}
