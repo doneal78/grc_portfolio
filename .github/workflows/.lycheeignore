@@ -1,0 +1,14 @@
+# Ignore patterns (regex or plain)
+# mailto are already excluded via --exclude-mail, but examples here for reference
+
+# Example: private dashboards or staging environments
+example.internal
+mycompany.okta.com
+jira.yourcompany.com
+
+# Example: GitHub anchors that can be flaky when headings change
+# (Better fix your heading IDs, but you can ignore temporarily)
+https://github.com/.+?#.+
+
+# Example: very rate-limited sites (if they cause noise)
+https://www.linkedin.com/.+
