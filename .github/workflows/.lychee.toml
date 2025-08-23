@@ -1,0 +1,11 @@
+fail = "error"           # set "warn" temporarily if you don't want CI to fail
+max_retries = 2
+retry_wait_time = 2
+cache = true
+accept = [200, 206, 429]
+exclude_mail = true
+exclude_loopback = true
+base = "https://doneal78.github.io/grc_portfolio/"
+exclude_path = [".lycheeignore"]
+timeout = 20
+user_agent = "Mozilla/5.0 (compatible; Lychee/0.15; +https://github.com/lycheeverse/lychee)"
