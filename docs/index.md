@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<section class="hero">
+<section class="hero hero--neon-img">
   <div class="hero__inner">
     <h1>David O’Neal</h1>
     <p class="lead">Cybersecurity & GRC Analyst — turning frameworks into audit‑ready evidence and automating compliance at scale.</p>
