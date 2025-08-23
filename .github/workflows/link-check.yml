@@ -7,37 +7,19 @@ on:
       - '.lychee*'
       - '.github/workflows/link-check.yml'
   workflow_dispatch:
-  schedule:
-    - cron: '0 12 * * 1'  # Mondays
 
 jobs:
   lychee:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
     steps:
       - uses: actions/checkout@v4
-
-      - name: Cache Lychee
-        uses: actions/cache@v4
-        with:
-          path: .lycheecache
-          key: lychee-${{ github.sha }}
-          restore-keys: lychee-
-
-      - name: Link Checker (Lychee)
-        uses: lycheeverse/lychee-action@v1
+      - uses: lycheeverse/lychee-action@v1
         with:
           args: >
             --base "https://doneal78.github.io/grc_portfolio/"
             --verbose
-            --retry-wait-time 2
-            --max-retries 2
-            --accept 200,206,429
             --exclude-mail
             --exclude-loopback
-            --exclude-file .lycheeignore
-            --cache
             docs/**/*.md
             docs/**/*.html
         env:
