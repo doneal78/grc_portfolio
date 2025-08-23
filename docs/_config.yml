@@ -1,10 +1,13 @@
 title: David O’Neal — GRC & Security Engineering
 description: Hands-on governance, risk, and security artifacts you can actually use.
 
+# project page settings
 baseurl: "/grc_portfolio"
 url: "https://doneal78.github.io"
 
+# keep theme line (works fine) — but all styling is in your CSS
 theme: jekyll-theme-cayman
+
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
@@ -17,5 +20,7 @@ github:
   is_project_page: false
 
 author: David O’Neal
+
+# Preview image (optional)
 logo: /assets/img/hero-neon.jpg
 image: /assets/img/hero-neon.jpg
