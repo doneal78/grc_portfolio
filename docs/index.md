@@ -59,3 +59,5 @@ title: Home
   <p>Email: <a href="mailto:onealdavide@gmail.com">onealdavide@gmail.com</a> &nbsp;•&nbsp;
      LinkedIn: <a href="https://www.linkedin.com/in/david-oneal/">/in/david-oneal</a></p>
 </section>
+
+[![Link Check](https://github.com/doneal78/grc_portfolio/actions/workflows/link-check.yml/badge.svg)](https://github.com/doneal78/grc_portfolio/actions/workflows/link-check.yml)
