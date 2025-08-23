@@ -1,24 +1,13 @@
 ---
-# Jekyll compiles this into CSS
+# Jekyll compiles this into CSS. Keep these dashes!
 ---
-@import "{{ site.theme }}";
 
-/* ======= Neon Cyber GRC Theme (matches your image) ======= */
+/* ======= SAFE BASELINE (no Liquid, no @import) ======= */
+/* Uses absolute URLs that include the project path /grc_portfolio */
 :root{
-  --bg:#0a0f1f;        /* deep navy */
-  --bg2:#0b1226;
-  --fg:#e6f1ff;        /* icy white */
-  --muted:#9db0c9;     /* desaturated blue */
-
-  --cyan:#00eaff;      /* neon cyan */
-  --cyan-2:#08b7c7;    /* cyan shade for gradients */
-  --magenta:#ff2bd6;   /* neon magenta */
-  --violet:#6f2cff;    /* optional accent */
-
-  --card:#121a2e;      /* card gradient start */
-  --card2:#172540;     /* card gradient end */
-
-  --ring: rgba(0,234,255,.55);  /* focus/hover glow */
+  --bg:#0a0f1f; --bg2:#0b1226; --fg:#e6f1ff; --muted:#9db0c9;
+  --cyan:#00eaff; --cyan-2:#08b7c7; --magenta:#ff2bd6; --violet:#6f2cff;
+  --card:#121a2e; --card2:#172540; --ring: rgba(0,234,255,.55);
 }
 
 /* Base */
@@ -53,7 +42,7 @@ a:hover{ text-decoration:underline; text-decoration-thickness:2px }
 .site-brand{ margin-right:auto; letter-spacing:.2px; font-weight:800; opacity:.92 }
 .site-nav a.active{ border-bottom:2px solid var(--cyan); padding-bottom:.2rem }
 
-/* Hero (neon image overlay ready) */
+/* Hero (image path is absolute; no Liquid) */
 .hero{
   position:relative; border-radius:18px; overflow:hidden; margin:1rem 0 2rem;
   background:
@@ -62,20 +51,11 @@ a:hover{ text-decoration:underline; text-decoration-thickness:2px }
     linear-gradient(135deg, #0b1226 0%, #0f1a38 55%, #0a0f1f 100%);
   box-shadow:0 16px 40px rgba(0,0,0,.55), inset 0 0 0 1px rgba(255,255,255,.06);
 }
-/* === Optional: stronger overlay for JPG hero (keeps text crisp) === */
 .hero--neon-img{
   background-image:
-    linear-gradient(135deg, rgba(6,10,20,.90), rgba(10,15,31,.94)), /* darker overlay than default */
-    url('{{ "/assets/img/hero-neon.jpg" | relative_url }}');
-}
-
-/* If you want it slightly brighter instead, use this version:
-.hero--neon-img{
-  background-image:
-    linear-gradient(135deg, rgba(6,10,20,.80), rgba(10,15,31,.86)),
-    url('{{ "/assets/img/hero-neon.jpg" | relative_url }}');
-}
-*/
+    linear-gradient(135deg, rgba(6,10,20,.90), rgba(10,15,31,.94)),
+    url('/grc_portfolio/assets/img/hero-neon.jpg');  /* <-- absolute path */
+  background-size:cover; background-position:center;
 }
 .hero__inner{ max-width:980px; margin:0 auto; padding:2.4rem 1.2rem; text-align:center }
 .hero h1{ margin:0 0 .5rem; font-size:2.35rem; letter-spacing:.2px }
