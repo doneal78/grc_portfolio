@@ -62,11 +62,20 @@ a:hover{ text-decoration:underline; text-decoration-thickness:2px }
     linear-gradient(135deg, #0b1226 0%, #0f1a38 55%, #0a0f1f 100%);
   box-shadow:0 16px 40px rgba(0,0,0,.55), inset 0 0 0 1px rgba(255,255,255,.06);
 }
+/* === Optional: stronger overlay for JPG hero (keeps text crisp) === */
 .hero--neon-img{
   background-image:
-    linear-gradient(135deg, rgba(6,10,20,.86), rgba(10,15,31,.90)),
+    linear-gradient(135deg, rgba(6,10,20,.90), rgba(10,15,31,.94)), /* darker overlay than default */
     url('{{ "/assets/img/hero-neon.jpg" | relative_url }}');
-  background-size:cover; background-position:center;
+}
+
+/* If you want it slightly brighter instead, use this version:
+.hero--neon-img{
+  background-image:
+    linear-gradient(135deg, rgba(6,10,20,.80), rgba(10,15,31,.86)),
+    url('{{ "/assets/img/hero-neon.jpg" | relative_url }}');
+}
+*/
 }
 .hero__inner{ max-width:980px; margin:0 auto; padding:2.4rem 1.2rem; text-align:center }
 .hero h1{ margin:0 0 .5rem; font-size:2.35rem; letter-spacing:.2px }
