@@ -22,3 +22,7 @@ Useful links, references, and reading materials that influenced this portfolio.
 - [Open FAIR Body of Knowledge](https://publications.opengroup.org/guides/g180)
 - [SANS Security Policy Templates](https://www.sans.org/information-security-policy/)
 - [GRC Engineering (AJ Yawn)](https://grcengineeringbook.com/)
+
+## Downloads
+- [Risk Register CSV](/grc_portfolio/assets/files/risk-register.csv){:.icon-download}
+- [FAIR‑lite Scoring Worksheet (MD)](/grc_portfolio/assets/files/fair-lite-scoring.md){:.icon-download}
