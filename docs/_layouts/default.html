@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
 
+  <!-- Theme & favicon -->
   <meta name="theme-color" content="#0a0f1f">
   <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}">
+
+  <!-- Fonts & CSS (fast) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -23,10 +26,13 @@
       {%- assign home2 = site.baseurl -%}
       {%- assign home3 = site.baseurl | append: '/' -%}
 
-      <a class="site-brand {% if here == home1 or here == home2 or here == home3 %}active{% endif %}"
-         href="{{ '/' | relative_url }}"
-         aria-current="{% if here == home1 or here == home2 or here == home3 %}page{% endif %}">
-        David O’Neal
+      <!-- Brand is now a Home button -->
+      <a
+        class="site-brand {% if here == home1 or here == home2 or here == home3 %}active{% endif %}"
+        href="{{ '/' | relative_url }}"
+        aria-current="{% if here == home1 or here == home2 or here == home3 %}page{% endif %}"
+      >
+        Home
       </a>
 
       <a href="{{ '/projects/aws-account-governance/' | relative_url }}" class="{% if here contains '/projects/aws-account-governance/' %}active{% endif %}">AWS Governance</a>
