@@ -25,7 +25,9 @@ Organizations track risks but struggle to:
 - Repeatable framework that scales across business units  
 - Governance and risk tied directly to **business objectives**
 
-## Evidence Artifacts
-- Risk register table (Markdown)  
-- FAIR‑lite scoring worksheet  
-- Treatment plan for top 3 risks
+## Downloadable Artifacts
+- **Risk Register (CSV):**  
+  [/assets/files/risk-register.csv](/grc_portfolio/assets/files/risk-register.csv)
+
+- **FAIR‑lite Scoring Worksheet (Markdown):**  
+  [/assets/files/fair-lite-scoring.md](/grc_portfolio/assets/files/fair-lite-scoring.md)
