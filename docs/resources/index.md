@@ -19,6 +19,6 @@ Useful links, references, and reading materials that influenced this portfolio.
 - [Fair Institute](https://www.fairinstitute.org/)
 
 ## Reading & Learning
-- [Open FAIR Body of Knowledge](https://publications.opengroup.org/standards/security/g180)
+- [Open FAIR Body of Knowledge]( https://publications.opengroup.org/guides/g180)
 - [SANS Security Policy Templates](https://www.sans.org/information-security-policy/)
 - [GRC Engineering (AJ Yawn)](https://grcengineeringbook.com/)
