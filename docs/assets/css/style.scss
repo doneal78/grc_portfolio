@@ -196,3 +196,10 @@ ul.bullets{ margin:.5rem 0 0 1.2rem } ul.bullets li{ margin:.35rem 0 }
   height: 18px;
   flex: 0 0 auto;
 }
+
+a.icon-download::after {
+  content: "⬇";
+  font-size: .9em;
+  margin-left: .35rem;
+  opacity: .8;
+}
