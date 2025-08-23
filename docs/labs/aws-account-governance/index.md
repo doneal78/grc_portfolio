@@ -1,31 +1,27 @@
 ---
 layout: default
-title: Risk Assessment (Simulated)
-permalink: /projects/risk-assessment/
+title: AWS Governance Lab
+permalink: /labs/aws-account-governance/
 ---
 
-# Risk Assessment (Simulated)
+# AWS Governance Lab
 
-**Objective**: Demonstrate structured risk analysis using FAIR‑lite scoring with a simulated dataset.
+Hands‑on lab showing how to implement AWS governance controls in a sandbox environment.
 
-## Problem
-Organizations track risks but struggle to:
-- Prioritize effectively  
-- Quantify business impact  
-- Translate findings into treatment plans  
+## Objectives
+- Stand up AWS Identity Center  
+- Configure AWS Config and Security Hub  
+- Apply budget alerts  
+- Capture screenshots as evidence  
 
-## Approach
-1. **Risk Register** — 10 simulated risks with owners and controls.  
-2. **FAIR‑Lite Scoring** — qualitative impact × likelihood → heatmap.  
-3. **Treatment Plan** — mitigation, acceptance, or transfer by risk.  
-4. **Evidence** — Markdown artifacts: control mappings, sample tickets.
+## Lab Steps
+1. Enable **AWS Organizations** and create sandbox accounts.  
+2. Apply **Service Control Policies** to restrict regions and enforce MFA.  
+3. Configure **AWS Config** to monitor key resources.  
+4. Enable **AWS Security Hub** for continuous compliance checks.  
+5. Set **budget alerts** for cost governance.  
 
-## Outcome
-- Clear prioritization of high‑impact risks  
-- Repeatable framework that scales across business units  
-- Governance and risk tied directly to **business objectives**
-
-## Evidence Artifacts
-- Risk register table (Markdown)  
-- FAIR‑lite scoring worksheet  
-- Treatment plan for top 3 risks
+## Deliverables
+- Identity Center setup screenshots  
+- Config compliance dashboard snapshots  
+- Budget alerts and notification evidence
