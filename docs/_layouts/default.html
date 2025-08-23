@@ -5,25 +5,42 @@
   <title>{{ page.title }} | {{ site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Theme & favicon -->
+  <meta name="theme-color" content="#0a0f1f">
   <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}">
 
+  <!-- Fonts & CSS (fast) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
   <a class="skip" href="#content">Skip to content</a>
 
   <header class="site-header">
     <nav class="site-nav wrapper" aria-label="Main">
-      <a class="site-brand" href="{{ '/' | relative_url }}" aria-current="{% if page.url == '/' %}page{% endif %}">David O’Neal</a>
       {%- assign here = page.url -%}
-      <a href="{{ '/' | relative_url }}" class="{% if here == '/' %}active{% endif %}">Home</a>
+      {%- assign home1 = '/' -%}
+      {%- assign home2 = site.baseurl -%}
+      {%- assign home3 = site.baseurl | append: '/' -%}
+
+      <!-- Brand doubles as Home (no separate Home link) -->
+      <a
+        class="site-brand {% if here == home1 or here == home2 or here == home3 %}active{% endif %}"
+        href="{{ '/' | relative_url }}"
+        aria-current="{% if here == home1 or here == home2 or here == home3 %}page{% endif %}"
+      >
+        David O’Neal
+      </a>
+
       <a href="{{ '/projects/aws-account-governance/' | relative_url }}" class="{% if here contains '/projects/aws-account-governance/' %}active{% endif %}">AWS Governance</a>
       <a href="{{ '/projects/risk-assessment/' | relative_url }}" class="{% if here contains '/projects/risk-assessment/' %}active{% endif %}">Risk Assessment</a>
       <a href="{{ '/labs/aws-account-governance/' | relative_url }}" class="{% if here contains '/labs/' %}active{% endif %}">Labs</a>
       <a href="{{ '/portfolio-templates/' | relative_url }}" class="{% if here contains '/portfolio-templates/' or here contains '/templates/' %}active{% endif %}">Templates</a>
       <a href="{{ '/resources/' | relative_url }}" class="{% if here contains '/resources/' %}active{% endif %}">Resources</a>
-      <a href="{{ '/resume.pdf' | relative_url }}" target="_blank" rel="noopener">Resume</a>
+      <a href="{{ '/resume.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Resume</a>
     </nav>
   </header>
 
