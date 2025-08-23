@@ -2,8 +2,13 @@
 # Jekyll compiles this into CSS. Keep these dashes!
 ---
 
-/* ======= SAFE BASELINE (no Liquid, no @import) ======= */
-/* Uses absolute URLs that include the project path /grc_portfolio */
+/* ===== SAFE, LIQUID-FREE STYLESHEET =====
+   • No "@import" (avoids theme pipeline issues)
+   • No Liquid {{ }} in CSS (avoids SCSS/Liquid parser fights)
+   • Uses absolute URLs including /grc_portfolio for images
+*/
+
+/* Palette */
 :root{
   --bg:#0a0f1f; --bg2:#0b1226; --fg:#e6f1ff; --muted:#9db0c9;
   --cyan:#00eaff; --cyan-2:#08b7c7; --magenta:#ff2bd6; --violet:#6f2cff;
@@ -42,7 +47,7 @@ a:hover{ text-decoration:underline; text-decoration-thickness:2px }
 .site-brand{ margin-right:auto; letter-spacing:.2px; font-weight:800; opacity:.92 }
 .site-nav a.active{ border-bottom:2px solid var(--cyan); padding-bottom:.2rem }
 
-/* Hero (image path is absolute; no Liquid) */
+/* Hero (absolute path to JPG) */
 .hero{
   position:relative; border-radius:18px; overflow:hidden; margin:1rem 0 2rem;
   background:
@@ -54,7 +59,7 @@ a:hover{ text-decoration:underline; text-decoration-thickness:2px }
 .hero--neon-img{
   background-image:
     linear-gradient(135deg, rgba(6,10,20,.90), rgba(10,15,31,.94)),
-    url('/grc_portfolio/assets/img/hero-neon.jpg');  /* <-- absolute path */
+    url('/grc_portfolio/assets/img/hero-neon.jpg'); /* ABSOLUTE PATH */
   background-size:cover; background-position:center;
 }
 .hero__inner{ max-width:980px; margin:0 auto; padding:2.4rem 1.2rem; text-align:center }
