@@ -1,0 +1,5 @@
+# Add domains here if they false-positive or require auth
+# examples (customize/remove as needed):
+https://www.linkedin.com/.+
+example.internal
+jira.yourcompany.com
