@@ -1,0 +1,11 @@
+ID,Title,Owner,Business Process,Key Controls,Impact (H/M/L),Likelihood (L/M/H),Inherent Risk (I x L),Residual Risk (H/M/L),Treatment,Due Date,Status,Evidence Link,Notes
+R-01,Privilege escalation via stale admin role,Platform Eng,Cloud Platform Admin,"JIT Access; 90-day admin review; CloudTrail alerts",High,Possible,High,Medium,Mitigate,2025-10-15,In progress,/grc_portfolio/projects/aws-account-governance/,"Scope admin roles; remove unused; alert on elevation"
+R-02,Public S3 bucket exposure,Cloud Eng,Data Storage,"S3 Block Public Access; SCP deny public ACL; AWS Config rules",High,Unlikely,Medium,Low,Mitigate,2025-09-30,Planned,/grc_portfolio/projects/aws-account-governance/,"Org-level guardrail + remediation"
+R-03,Vendor breach of PII,GRC,Third-Party Management,"DPA; SOC 2 review; key escrow",High,Possible,High,Medium,Transfer,2025-11-01,In progress,,Contractual controls and periodic assurance
+R-04,Phishing → session hijack,IT Sec,Workforce Identity,"FIDO2; CA policy; user training",Medium,Likely,High,Medium,Mitigate,2025-09-15,In progress,,MFA hardening + conditional access
+R-05,Unpatched servers exploited,Ops,Patch Management,"Automated patching; maintenance windows; vulnerability SLAs",High,Possible,High,Medium,Mitigate,2025-09-25,In progress,,Tie SLAs to risk level
+R-06,Secrets in source code,DevSecOps,Software Delivery,"Pre-commit secret scan; repo policies; key rotation",High,Possible,High,Medium,Mitigate,2025-10-05,Planned,,Block on push + rotate found keys
+R-07,Excess data retention,Data Gov,Data Lifecycle,"Retention policy; S3 lifecycle; legal hold process",Medium,Possible,Medium,Low,Mitigate,2025-10-20,Planned,,Reduce blast radius + cost
+R-08,Weak logging for critical actions,Platform Eng,Observability,"CloudTrail; log immutability; detections",Medium,Possible,Medium,Low,Mitigate,2025-09-30,In progress,,Add detections for delete/disable events
+R-09,Unapproved SaaS use (shadow IT),GRC,Procurement/IT,"SaaS inventory; request workflow; SSO",Medium,Possible,Medium,Low,Accept,2025-12-31,Accepted,,Monitor trends and revisit quarterly
+R-10,Key mismanagement (KMS),Security Eng,Cryptographic Controls,"Key rotation; IAM boundaries; CMK ownership",High,Unlikely,Medium,Low,Mitigate,2025-11-15,Planned,,Tighten key roles & alarms
