@@ -32,10 +32,10 @@ title: Home
       <span class="pill">AWS</span>
     </a>
     <a href="{{ '/projects/risk-assessment/' | relative_url }}" class="card">
-      <h3>Risk Assessment (Simulated)</h3>
-      <p>Risk register, FAIR‑lite scoring, treatment plan</p>
-      <span class="pill">FAIR</span>
-    </a>
+  <h3>Risk Artifacts (Downloadable)</h3>
+  <p>Risk register (CSV) and FAIR‑lite worksheet (MD) used in the case study.</p>
+  <span class="pill">Evidence</span>
+</a>
     <a href="{{ '/projects/aws-account-governance/' | relative_url }}" class="card">
       <h3>AWS Account Governance Case Study</h3>
       <p>Guardrails, least privilege, NIST CSF mapping</p>
