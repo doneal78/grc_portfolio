@@ -1,0 +1,22 @@
+# Make failures obvious
+fail = "error"        # "warn" to avoid failing CI on broken links
+max_retries = 2
+retry_wait_time = 2
+cache = true
+accept = [200, 206, 429]  # allow rate-limited as non-fatal
+
+# Skip these schemes
+exclude_mail = true
+exclude_loopback = true
+
+# Base for resolving relative URLs on a project page:
+base = "https://doneal78.github.io/grc_portfolio/"
+
+# Respect our ignore list
+exclude_path = [".lycheeignore"]
+
+# Timeouts (seconds)
+timeout = 20
+
+# Custom user-agent avoids some 403s
+user_agent = "Mozilla/5.0 (compatible; Lychee/0.15; +https://github.com/lycheeverse/lychee)"
