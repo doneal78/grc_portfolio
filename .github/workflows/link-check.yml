@@ -28,16 +28,18 @@ jobs:
         uses: lycheeverse/lychee-action@v1
         with:
           # Base URL is critical for project pages (/grc_portfolio)
-          args: >
-            --base "https://doneal78.github.io/grc_portfolio/"
-            --verbose
-            --retry-wait-time 2
-            --max-retries 2
-            --accept 200,206,429
-            --exclude-mail
-            --exclude-loopback
-            --cache
-            docs/**/*.md
-            docs/**/*.html
+         args: >
+  --base "https://doneal78.github.io/grc_portfolio/"
+  --verbose
+  --retry-wait-time 2
+  --max-retries 2
+  --accept 200,206,429
+  --exclude-mail
+  --exclude-loopback
+  --exclude-file .lycheeignore
+  --cache
+  docs/**/*.md
+  docs/**/*.html
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
