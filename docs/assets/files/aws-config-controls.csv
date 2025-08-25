@@ -1,0 +1,8 @@
+Control ID,Control Name,AWS Config Rule,Description,Framework Mapping,Evidence Artifact
+CFG-001,No Public S3 Buckets,s3-bucket-public-read-prohibited,Checks that S3 buckets do not allow public read access.,CIS 3.1 / NIST CSF PR.AC-3,Screenshot of Config compliance + blocked bucket policy
+CFG-002,Root Account MFA Enabled,root-account-mfa-enabled,Ensures the root account has MFA enabled.,CIS 1.2 / NIST CSF PR.AC-7,CLI output: aws iam get-account-summary
+CFG-003,EC2 Instances In Approved VPC,ec2-instance-no-public-ip,Checks that EC2 instances are not publicly exposed.,CIS 4.1 / NIST CSF PR.AC-5,Security Hub finding screenshot + remediation ticket
+CFG-004,CloudTrail Enabled,cloud-trail-enabled,Ensures CloudTrail is enabled in all regions.,CIS 2.1 / NIST CSF DE.AE-3,Screenshot of CloudTrail console + Config compliance report
+CFG-005,Unused IAM Keys Disabled,iam-user-unused-credentials-check,Checks for IAM user access keys unused for 90+ days.,CIS 1.3 / NIST CSF PR.AC-1,CLI output + deactivation ticket
+CFG-006,EBS Volumes Encrypted,ebs-encrypted-volume-check,Ensures all attached EBS volumes are encrypted.,CIS 2.7 / NIST CSF PR.DS-1,Screenshot of Config compliance report
+CFG-007,RDS Snapshots Not Public,rds-snapshots-public-prohibited,Ensures RDS snapshots are not publicly shared.,CIS 2.6 / NIST CSF PR.AC-3,Security Hub finding + AWS console screenshot
